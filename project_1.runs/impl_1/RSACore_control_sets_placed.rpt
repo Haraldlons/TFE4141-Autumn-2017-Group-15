@@ -1,0 +1,119 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Mon Nov 20 22:45:31 2017
+| Host         : EMOLTU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file RSACore_control_sets_placed.rpt
+| Design       : RSACore
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    53 |
+| Unused register locations in slices containing registers |   188 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |             300 |          139 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            2087 |          494 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------------+---------------------------------------------+------------------+----------------+
+|  Clock Signal  |               Enable Signal               |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++----------------+-------------------------------------------+---------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                           |                                             |                1 |              1 |
+|  clk_IBUF_BUFG |                                           | rsa_controller/n_receive_i_2_n_0            |                1 |              1 |
+|  clk_IBUF_BUFG | rsa_datapath/m_receive_i_i_1_n_0          | rsa_datapath/pTimesOne_s_i_1_n_0            |                1 |              1 |
+|  clk_IBUF_BUFG | rsa_datapath/e_receive_i_i_1_n_0          | rsa_datapath/AR[0]                          |                1 |              1 |
+|  clk_IBUF_BUFG | rsa_datapath/core_finished_i_i_1_n_0      | rsa_datapath/core_finished_i_i_3_n_0        |                1 |              1 |
+|  clk_IBUF_BUFG | rsa_datapath/p_b                          | rsa_datapath/core_finished_i_i_3_n_0        |                1 |              1 |
+|  clk_IBUF_BUFG |                                           | rsa_datapath/pTimesOne_s_i_1_n_0            |                1 |              1 |
+|  clk_IBUF_BUFG |                                           | rsa_datapath/tmp_r0                         |                1 |              1 |
+|  clk_IBUF_BUFG |                                           | rsa_datapath/pTimesP/start_count_i_2_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG | StartRsa_IBUF                             | rsa_datapath/pTimesOne_s_i_1_n_0            |                1 |              1 |
+|  clk_IBUF_BUFG | rsa_controller/start_config_counter0      | rsa_datapath/AR[0]                          |                1 |              1 |
+|  clk_IBUF_BUFG |                                           | rsa_datapath/core_finished_i_i_3_n_0        |                1 |              2 |
+|  clk_IBUF_BUFG |                                           | rsa_datapath/p_1_in_0                       |                2 |              2 |
+|  clk_IBUF_BUFG |                                           | rsa_datapath/e_r[127]_i_2_n_0               |                2 |              4 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesP/start_count          | rsa_datapath/pTimesP/start_count_i_2_n_0    |                3 |              7 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesC/start_count          | rsa_datapath/pTimesC/start_count_i_2__0_n_0 |                3 |              7 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesC/E[0]                 | rsa_datapath/p_1_in_0                       |                3 |              8 |
+|  clk_IBUF_BUFG | rsa_controller/config_counter0            | rsa_controller/n_receive_i_2_n_0            |                3 |              8 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesC_d_i                  | rsa_datapath/c_out_r[127]_i_3_n_0           |                3 |              8 |
+|  clk_IBUF_BUFG | rsa_datapath/p_b                          | rsa_datapath/p_a[127]_i_3_n_0               |                2 |              9 |
+|  clk_IBUF_BUFG | rsa_controller/n_receive                  | rsa_datapath/n_r[127]_i_1__1_n_0            |                4 |             19 |
+|  clk_IBUF_BUFG |                                           | rsa_datapath/AR[0]                          |               12 |             31 |
+|  clk_IBUF_BUFG | rsa_datapath/count20                      | rsa_datapath/AR[0]                          |                7 |             32 |
+|  clk_IBUF_BUFG | rsa_datapath/count[31]_i_1_n_0            | rsa_datapath/pTimesOne_s_i_1_n_0            |                5 |             32 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesC/c_out_r_reg[0][0]    | rsa_datapath/c_out_r[127]_i_3_n_0           |                8 |             32 |
+|  clk_IBUF_BUFG |                                           | rsa_datapath/pTimesC/b_r[95]_i_1_n_0        |               18 |             35 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesC_s                    | rsa_datapath/e_r[127]_i_2_n_0               |               10 |             39 |
+|  clk_IBUF_BUFG |                                           | rsa_datapath/pTimesC/start_count_i_2__0_n_0 |               21 |             45 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesC/a_r0                 | rsa_datapath/pTimesC/start_count_i_2__0_n_0 |               15 |             47 |
+|  clk_IBUF_BUFG |                                           | rsa_datapath/pTimesC/a_r[94]_i_1_n_0        |               23 |             49 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesC/a_r0                 | rsa_datapath/pTimesC/a_r[94]_i_1_n_0        |               18 |             49 |
+|  clk_IBUF_BUFG | rsa_datapath/e_r0                         | rsa_datapath/AR[0]                          |               11 |             53 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesC_d_i                  | rsa_datapath/p_1_in_0                       |               17 |             55 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesC/a_r0                 | rsa_datapath/pTimesC/b_r[95]_i_1_n_0        |               20 |             63 |
+|  clk_IBUF_BUFG |                                           | rsa_datapath/pTimesP/a_r[64]_i_1_n_0        |               27 |             63 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesP/a_r0                 | rsa_datapath/pTimesP/a_r[127]_i_1_n_0       |                9 |             63 |
+|  clk_IBUF_BUFG | rsa_datapath/m_r0                         | rsa_datapath/m_r[111]_i_1_n_0               |               13 |             64 |
+|  clk_IBUF_BUFG | rsa_datapath/m_r0                         | rsa_datapath/m_r[127]_i_2_n_0               |               14 |             64 |
+|  clk_IBUF_BUFG | rsa_datapath/p_b                          | rsa_datapath/m_r[111]_i_1_n_0               |               10 |             64 |
+|  clk_IBUF_BUFG | rsa_datapath/p_b                          | rsa_datapath/m_r[127]_i_2_n_0               |                9 |             64 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesP/a_r0                 | rsa_datapath/pTimesP/a_r[64]_i_1_n_0        |               13 |             65 |
+|  clk_IBUF_BUFG |                                           | rsa_datapath/pTimesP/a_r[127]_i_1_n_0       |               29 |             65 |
+|  clk_IBUF_BUFG | rsa_datapath/e_r0                         | rsa_datapath/e_r[127]_i_2_n_0               |               16 |             75 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesC/c_out_r_reg[0][0]    | rsa_datapath/p_1_in_0                       |               21 |             96 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesC/a_r0                 | rsa_datapath/pTimesC/b_r[127]_i_1_n_0       |               24 |             98 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesC_s                    | rsa_datapath/n_r[127]_i_1__1_n_0            |               28 |             99 |
+|  clk_IBUF_BUFG | rsa_controller/n_receive                  | rsa_datapath/p_a[127]_i_3_n_0               |               22 |            109 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesC_s                    | rsa_datapath/c_a[127]_i_1_n_0               |               33 |            118 |
+|  clk_IBUF_BUFG | rsa_datapath/p_b                          | rsa_datapath/p_a[118]_i_2_n_0               |               15 |            118 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesP/a_r0                 | rsa_datapath/pTimesP/n_r[127]_i_1_n_0       |               41 |            128 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesC/a_r0                 | rsa_datapath/pTimesC/n_r[127]_i_1__0_n_0    |               31 |            128 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesP/a_r0                 | rsa_datapath/pTimesP/start_count_i_2_n_0    |               29 |            129 |
+|  clk_IBUF_BUFG | rsa_datapath/pTimesP/pTimesP_s_reg_rep__0 | rsa_datapath/tmp_r0                         |               28 |            131 |
++----------------+-------------------------------------------+---------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    11 |
+| 2      |                     2 |
+| 4      |                     1 |
+| 7      |                     2 |
+| 8      |                     3 |
+| 9      |                     1 |
+| 16+    |                    33 |
++--------+-----------------------+
+
+

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="RSACoreTestBench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="RSACoreTestBench" />
+            <top_module name="compdecl" />
+            <top_module name="rsaparameters" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="417846240fs"></ZoomStartTime>
+      <ZoomEndTime time="1116430753fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="159"></NameColumnWidth>
+      <ValueColumnWidth column_width="236"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/RSACoreTestBench/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/Resetn" type="logic">
+      <obj_property name="ElementShortName">Resetn</obj_property>
+      <obj_property name="ObjectShortName">Resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/InitRsa" type="logic">
+      <obj_property name="ElementShortName">InitRsa</obj_property>
+      <obj_property name="ObjectShortName">InitRsa</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/StartRsa" type="logic">
+      <obj_property name="ElementShortName">StartRsa</obj_property>
+      <obj_property name="ObjectShortName">StartRsa</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/DataIn" type="array">
+      <obj_property name="ElementShortName">DataIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataIn[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/DataOut" type="array">
+      <obj_property name="ElementShortName">DataOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/CoreFinished" type="logic">
+      <obj_property name="ElementShortName">CoreFinished</obj_property>
+      <obj_property name="ObjectShortName">CoreFinished</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/CryptoState" type="other">
+      <obj_property name="ElementShortName">CryptoState</obj_property>
+      <obj_property name="ObjectShortName">CryptoState</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/ShiftCtr" type="other">
+      <obj_property name="ElementShortName">ShiftCtr</obj_property>
+      <obj_property name="ObjectShortName">ShiftCtr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/NEKey" type="array">
+      <obj_property name="ElementShortName">NEKey[255:0]</obj_property>
+      <obj_property name="ObjectShortName">NEKey[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/PlainText" type="array">
+      <obj_property name="ElementShortName">PlainText[127:0]</obj_property>
+      <obj_property name="ObjectShortName">PlainText[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/Result" type="array">
+      <obj_property name="ElementShortName">Result[127:0]</obj_property>
+      <obj_property name="ObjectShortName">Result[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/R/rsa_datapath/e_r" type="array">
+      <obj_property name="ElementShortName">e_r[127:0]</obj_property>
+      <obj_property name="ObjectShortName">e_r[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/R/rsa_datapath/n_r" type="array">
+      <obj_property name="ElementShortName">n_r[127:0]</obj_property>
+      <obj_property name="ObjectShortName">n_r[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/R/rsa_datapath/m_r" type="array">
+      <obj_property name="ElementShortName">m_r[127:0]</obj_property>
+      <obj_property name="ObjectShortName">m_r[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/R/rsa_controller/e_receive" type="logic">
+      <obj_property name="ElementShortName">e_receive</obj_property>
+      <obj_property name="ObjectShortName">e_receive</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/R/rsa_controller/n_receive" type="logic">
+      <obj_property name="ElementShortName">n_receive</obj_property>
+      <obj_property name="ObjectShortName">n_receive</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/R/rsa_controller/m_receive" type="logic">
+      <obj_property name="ElementShortName">m_receive</obj_property>
+      <obj_property name="ObjectShortName">m_receive</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/R/rsa_controller/pTimesOne_s" type="logic">
+      <obj_property name="ElementShortName">pTimesOne_s</obj_property>
+      <obj_property name="ObjectShortName">pTimesOne_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/R/rsa_controller/pTimesP_s" type="logic">
+      <obj_property name="ElementShortName">pTimesP_s</obj_property>
+      <obj_property name="ObjectShortName">pTimesP_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/R/rsa_datapath/p_out" type="array">
+      <obj_property name="ElementShortName">p_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">p_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/R/rsa_controller/config_counter" type="array">
+      <obj_property name="ElementShortName">config_counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">config_counter[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RSACoreTestBench/R/rsa_controller/msg_counter" type="array">
+      <obj_property name="ElementShortName">msg_counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">msg_counter[7:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/imports/new/ABmodn.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sim_1/imports/RSAExampleTestbench/RSAParameters.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sim_1/imports/RSAExampleTestbench/CompDecl.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/imports/new/RSA_controller.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/imports/new/RSA_datapath.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/imports/new/RSAcore.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sim_1/imports/RSAExampleTestbench/RSACoreTestBench.vhd"
+
+# Do not sort compile order
+nosort
